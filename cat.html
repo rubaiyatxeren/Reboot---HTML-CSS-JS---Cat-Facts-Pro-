@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Fact Pro</title>
+    <link rel="stylesheet" href="cat.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cat-icon">🐱</div>
+      <h1>Cat Facts Pro</h1>
+      <p class="subtitle">Get random facts about our feline friends</p>
+
+      <div class="fact-box">
+        <div class="fact-text" id="output">
+          Click the button below to get a cat fact!
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="fetchBtn" onclick="fetchData()">Get New Fact</button>
+
+        <button id="multiBtn5" onclick="fetchMultiple(5)">Get 5 Facts</button>
+        <button id="multiBtn10" onclick="fetchMultiple(10)">
+          Get 10 Facts
+        </button>
+      </div>
+
+      <div class="auto-refresh">
+        <input
+          type="checkbox"
+          id="autoRefresh"
+          onchange="toggleAutoRefresh()"
+        />
+        <label for="autoRefresh">Auto-refresh every 10 seconds</label>
+      </div>
+    </div>
+
+    <script src="cat.js"></script>
+  </body>
+</html>
